@@ -29,9 +29,7 @@ header,h1 {
   text-align: center; 
   text-transform:uppercase;} 
 
-.newsletter_label,p {
-  display:block;
-  margin:10px 10px;}
+/*base styles*/
 
 /* line separations*/
 
@@ -46,24 +44,35 @@ header,h1 {
   height: 3px;
   background-color: black;
   margin: 0px 17px 0px;}
-  
+
+  /*header styles*/
 .signup {
   text-align:center;
   margin-top:10px;}
 
-        
+p {
+  display:block;
+  margin:10px 10px;}
+    
+/*form styles*/  
+
+/*Section1 Styles*/ 
+
+.section1 {
+  display:flex;
+  flex-direction: column;}
+
 h2,legend {
   color:#383e44;
   font-size:30px;}
 
 legend {
   text-align:left; 
-  font-size: 25px;
-  padding:5px;
-  margin: 10px 15px;} 
+  margin-top: 30px;
+  margin-left: 10px;} 
 
- #news{
-  margin-left:0;}
+ #news,.label_header, .newsletter_label {
+  margin:0;}
 
 ul, fieldset {
   list-style: none;
@@ -73,11 +82,6 @@ ul, fieldset {
 fieldset {
   border:none;}
 
-.section1 {
-  display:flex;
-  flex-direction: column;}
-
-  
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -93,36 +97,34 @@ textarea, #state{
   font-size: 20px;
   color:#8e9397;}
 
+::placeholder {
+  font-size:15px;
+  color:#8e9397;
+  text-align: end; }
+
+textarea::placeholder {
+  text-align:left;
+  font-size: 1em;
+  margin-right: 10px;  }
+
+input[type="number"]{
+  width:48%;
+  display:block;
+  text-align: left;
+  margin-left: 10px; }
+
+/*Section2 Styles*/ 
+
 .sectiontwo {
   text-align:left;
   margin: 10px 5px;
   padding:10px 15px;}
 
 label { 
-  margin:10px;}
+  margin:10px 10px;}
        
 .light {
-    display: inline-block;
-     margin:10px 10px;} 
-
-.label_header{
-  margin: 10px 10px;}
-
-input[type="number"]{
-  width:47%;
-  display:block;
-  text-align: left;
-  margin-left: 15px; }
-
- ::placeholder {
-  font-size:15px;
-  color:#8e9397;
-  text-align: end;  }
-
-  textarea::placeholder {
-  text-align:left;
-  font-size: 1em;
-  margin-right: 10px;  }
+  display: inline-block;} 
 
 input [type="checkbox"],
 input [type="radio"] {
@@ -134,7 +136,6 @@ input [type="radio"] {
   height: 90px;
   margin:10px 0;}
 
- /* submit button style*/
 
 button[type="submit"]{
   width: 98%; 
@@ -158,7 +159,7 @@ button[type="submit"]:focus{
   background-color:blue;
   transition: background-color 1s ease-in-out;} 
 
-button[type="submit"]:hover{
+button[type="submit"]:hover {
   background-color: blueviolet;
   transition:background-color 0.5s ease-in-out;}
 
@@ -177,13 +178,11 @@ header {
  
    label {
   margin-top:20px;
-  margin-left:100px;}
- .label_header, .light {
-  margin-left:10px;
-  }
+  margin-left:88px;}
 
-.label_header{
- margin:5px;}
+ .light{
+  margin:10px 10px; 
+ }
 
 input[type="text"],
 input[type="email"],
@@ -198,15 +197,20 @@ input[type="number"]{
 .sectiontwo {
   display:block;
   text-align: left;
-  margin-left:100px;}
+  margin-left:80px;}
    
 #line-1, .line-2 {
-  width:75%;
+  width:80%;
    margin:5px auto;}
 
 legend {
-  margin-left:100px;}
+  margin-left:85px;
+  margin-right:0;
+ padding: 0 5px;}
+#news {
+  padding:0;
 
+}
 button[type="submit"],#msg {
    width: 85%;}
   
