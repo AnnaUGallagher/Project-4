@@ -174,7 +174,8 @@ header {
  .section1  li {
   display:flex;
   flex-direction:row;
-  justify-content: space-between; }
+  justify-content: space-between; 
+}
  
    label {
   margin-top:20px;
@@ -192,8 +193,9 @@ input[type="tel"],#state {
 
 input[type="number"]{
   width:15%;
-  margin-right:317px;  }
-
+  margin-right:375px;
+ }
+ 
 .sectiontwo {
   display:block;
   text-align: left;
