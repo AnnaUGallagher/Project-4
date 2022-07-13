@@ -174,11 +174,12 @@ header {
  .section1  li {
   display:flex;
   flex-direction:row;
-  justify-content: space-between;
-  align-self:flex-start; 
+  justify-content: flex-start;
+   
 }
  
    label {
+    flex-basis: 20%;
   margin-top:20px;
   margin-left:88px;}
 
@@ -193,10 +194,10 @@ input[type="tel"],#state {
   margin:10px 10px;}
 
 input[type="number"]{
-  width:15%;
+  width:15%;}
  
  
-.sectiontwo {
+ .sectiontwo {
   display:block;
   text-align: left;
   margin-left:80px;}
